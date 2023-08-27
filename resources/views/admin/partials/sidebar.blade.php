@@ -15,12 +15,19 @@
         <!--navigation-->
         <ul class="metismenu" id="menu">
           <li>
-            <a href="index.html">
+            <a href="{{ route('dashboard') }}">
               <div class="parent-icon"><span class="material-symbols-outlined">home</span>
               </div>
               <div class="menu-title">Dashboard</div>
             </a>
           </li>
+          {{-- <li>
+            <a href="{{ route('schools') }}">
+              <div class="parent-icon"><span class="material-symbols-outlined">home</span>
+              </div>
+              <div class="menu-title">Schools</div>
+            </a>
+          </li> --}}
           <li>
             <a href="javascript:;" class="has-arrow">
               <div class="parent-icon"><span class="material-symbols-outlined">apps</span>
@@ -28,7 +35,7 @@
               <div class="menu-title">Application</div>
             </a>
             <ul>
-              <li> <a href="app-emailbox.html"><span class="material-symbols-outlined">arrow_right</span>Email</a>
+              <li> <a href="{{ route('schools') }}"><span class="material-symbols-outlined">arrow_right</span>Schools</a>
               </li>
               <li> <a href="app-chat-box.html"><span class="material-symbols-outlined">arrow_right</span>Chat Box</a>
               </li>
@@ -45,13 +52,13 @@
             </ul>
           </li>
           <li class="menu-label">UI Elements</li>
-          <li>
+          {{-- <li>
             <a href="{{ route('schools') }}">
               <div class="parent-icon"><span class="material-symbols-outlined">account_circle</span>
               </div>
               <div class="menu-title">Schools</div>
             </a>
-          </li>
+          </li> --}}
           <li>
             <a href="javascript:;" class="has-arrow">
               <div class="parent-icon"><span class="material-symbols-outlined">widgets</span>
